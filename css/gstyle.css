@@ -1,0 +1,70 @@
+.brand-icon {
+    padding-top: 0.438em;
+}
+
+.page-content {
+    margin: 6.25em auto;
+}
+
+ul.posts {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.posts .post-item {
+    margin-bottom: 2.143em;
+    border-bottom: 1px solid rgb(242,242,242);
+}
+
+.posts .post-item > a {
+    color: rgb(95,95,95);
+    font-size: 1.5em;
+}
+
+.posts .post-item > p:after{
+    content: "阅读更多»";
+    cursor: pointer;
+    color: #5bc0de;
+    text-decoration: underline;
+    margin-left: 0.714em;
+}
+/*如何after后hover
+.posts .post-item > p::after:hover {
+    color: red;
+}
+*/
+.posts .post-item .post-footer {
+    margin-bottom: 1.5em;
+}
+
+.posts .post-item .post-footer .loc {
+    margin-left: 0.4em;
+}
+.posts .post-item .post-footer a {
+    background: black;
+    color: white;
+    padding: 3px;
+    margin-right: 4px;
+}
+
+.posts .post-item p {
+    margin: 1em 0;
+}
+
+.gpagination {
+    text-align: center;
+}
+
+.gpagination .circle {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
