@@ -3,15 +3,26 @@
 }
 
 .page-content {
+    width: 85%;
     margin: 6.25em auto;
 }
 
-ul.posts {
+
+ul {
     list-style-type: none;
+    padding-left: 0px;
 }
-a {
+
+/*main-part*/
+a,a:hover {
     text-decoration: none;
 }
+
+/*为什么这里的hover无论对哪个都不奏效？
+a:hover {
+    color: #5bc0de;
+}
+*/
 
 .posts .post-item {
     margin-bottom: 2.143em;
@@ -21,6 +32,10 @@ a {
 .posts .post-item > a {
     color: rgb(95,95,95);
     font-size: 1.5em;
+}
+
+.posts .post-item > a:hover {
+    color: #00CCCC;
 }
 
 .posts .post-item > p:after{
@@ -42,6 +57,7 @@ a {
 .posts .post-item .post-footer .loc {
     margin-left: 0.4em;
 }
+
 .posts .post-item .post-footer a {
     background: black;
     color: white;
@@ -67,4 +83,64 @@ a {
     color: white;
     display: inline-block;
     text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.gpagination .current {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.gpagination > a:hover{
+    background: #6699FF;
+    border:1px solid #6699FF;
+    transition: background .2s;
+}
+
+/*side-part*/
+.sidepart {
+    margin-top: 1.429em;
+}
+.sidepart > div {
+    width: 80%;
+    border: 1px solid #CCC;
+    margin: 0 auto 1.429em;
+    /*text-align: center;*/
+    padding: 1.429em;
+}
+
+.sidepart .websites .icon {
+    margin-bottom: 0.514em;
+}
+/*感觉这里可读性不够*/
+.sidepart ul li:before {
+    content: "《";
+}
+
+.sidepart ul li:after {
+    content: "》";
+}
+
+.sidepart ul {
+    padding-left: 0.714em;
+}
+
+/*PC布局*/
+@media only screen and (min-width: 30em) {/*这里的1em值是多少*/
+    .page-content {
+        width: 85%;
+        margin: 6.25em auto;
+    }
+
+    .main-part {
+        width: 70%;
+        float: left;
+    }
+
+    .sidepart {
+        width: 30%;
+        float: left;
+    }
 }
