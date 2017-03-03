@@ -127,11 +127,65 @@ a:hover {
     padding-left: 0.714em;
 }
 
-/*PC布局*/
-@media only screen and (min-width: 30em) {/*这里的1em值是多少*/
-    .page-content {
-        width: 85%;
-        margin: 6.25em auto;
+/*footer的移动设备样式*/
+.footer {
+    background: #2e3033;
+    padding: 2.143em 2.857em 2.143em;
+}
+.footer .column {
+    border-bottom: 1px solid #45484c;
+}
+.footer .column .items {
+    display: none;
+}
+
+.footer .column a {
+    color: #ffffff;
+}
+
+.footer .column h4 {
+    font-size: 16px;
+}
+.footer .column .title {
+    display: block;
+    line-height: 40px;
+}
+
+.footer .column ul li a {
+    line-height: 26px;
+}
+@media only screen and (min-width: 25.875em) { /*414px*/
+    .footer .column {
+        display: inline-block;
+        width: 19%;
+    }
+
+    .footer .column .title {
+        line-height: 17.33px;
+    }
+
+    .footer .column .h4 {
+        margin-bottom: 15px;
+    }
+    .footer .column .items {
+        display: block;
+    }
+}
+/*840px*/
+@media only screen and (min-width: 52.5em) {
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        *zoom: 1;
     }
 
     .main-part {
@@ -143,4 +197,5 @@ a:hover {
         width: 30%;
         float: left;
     }
+
 }
