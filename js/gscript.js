@@ -20,7 +20,7 @@ function displayItems2() {
 }
 
 function displayItems3() {
-    var uList = document.getElementById("2");
+    var uList = document.getElementById("3");
     if(uList.style.display == "none") {
         uList.style.display = "block";
     } else {
@@ -29,7 +29,7 @@ function displayItems3() {
 }
 
 function displayItems4() {
-    var uList = document.getElementById("2");
+    var uList = document.getElementById("4");
     if(uList.style.display == "none") {
         uList.style.display = "block";
     } else {
@@ -38,7 +38,7 @@ function displayItems4() {
 }
 
 function displayItems5() {
-    var uList = document.getElementById("2");
+    var uList = document.getElementById("5");
     if(uList.style.display == "none") {
         uList.style.display = "block";
     } else {

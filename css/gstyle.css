@@ -141,6 +141,7 @@ a:hover {
 
 .footer .column a {
     color: #ffffff;
+    position: relative;
 }
 
 .footer .column h4 {
@@ -151,10 +152,27 @@ a:hover {
     line-height: 40px;
 }
 
+.footer .column .title:after {
+    position: absolute;
+    right: 0px;
+    top: 7px;;
+    content: ""; /*无论搞什么，都一定要加这个*/
+    width: 0px;
+    height: 0px;
+    border-top: 14px solid #ffffff;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #ffffff;
+    border-left: 14px solid #ffffff;
+    border-radius: 14px;
+}
 .footer .column ul li a {
     line-height: 26px;
 }
+
 @media only screen and (min-width: 25.875em) { /*414px*/
+    .footer {
+        padding-left: 7em;
+    }
     .footer .column {
         display: inline-block;
         width: 19%;
@@ -164,6 +182,9 @@ a:hover {
         line-height: 17.33px;
     }
 
+    .footer .column .title:after {
+        display: none;
+    }
     .footer .column .h4 {
         margin-bottom: 15px;
     }
@@ -199,3 +220,7 @@ a:hover {
     }
 
 }
+
+
+
+
