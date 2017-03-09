@@ -1,0 +1,114 @@
+.navbar-default {
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.brand-icon {
+    padding-top: 0.438em;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.g-container {
+    padding-top: 80px;
+}
+
+.g-container .content {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.user-search {
+    border-bottom: 3px solid #f48024;
+    padding: 10px;
+}
+.user-title {
+    float: left;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.search-part {
+    float: right;
+    margin-top: 5px;
+}
+
+.g-container .input-box {
+    width: 70%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5da;
+    margin-left: 10px;
+    /*margin-bottom: 15px;*/
+}
+
+.g-container .user-browse {
+    margin-top: 30px;
+}
+.main-part .user-browse table {
+    width: 100%;
+}
+.main-part .user-browse tbody > tr > td {
+    width: 25%;
+}
+
+.user-info {
+    padding: 6px;
+    margin-bottom: 15px;
+    /*先不用width:100%*/
+
+}
+
+.user-avatar {
+    float: left;
+}
+
+.user-details {
+    float: left;
+    margin-left: 9px;
+}
+
+.user-tags {
+    clear: both;
+    margin-left: 57px;
+}
+
+.user-name {
+    display: block;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.user-location {
+    display: block;
+    font-size: 12px;
+}
+
+.user-grade {
+    display: block;
+    font-size: 12px;
+}
+.user-tags {
+    line-height: 0.3;
+}
+.user-tags > a {
+    font-size: 12px;
+    line-height: 1.3;
+}

@@ -3,8 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <title>用户</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-icon" href="#">
+                <img src="../icon/brand.png" alt="">
+            </a>
+            <a class="navbar-brand" href="#">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="">用户</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">选项 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--page content-->
+<div class="g-container">
+    <div class="content">
+        <div class="main-part">
+            <div class="user-search clearfix"><!--clearfix make no sense-->
+                <h1 class="user-title">用户</h1>
+                <div class="search-part">
+                    查找用户:
+                    <input type="text" class="input-box">
+                </div>
+            </div>
+            <div class="user-browse">
+                 <table>
+                     <tbody>
+                        <tr>
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <a href="#">
+                                            <img src="https://i.stack.imgur.com/hMDvl.jpg?s=48&g=1">
+                                        </a>
+                                    </div>
+                                    <div class="user-details">
+                                        <a href="#" class="user-name">Gaby Goole</a>
+                                        <span class="user-location">China SICAU</span>
+                                        <span class="user-grade">2014</span>
+                                    </div>
+                                    <div class="user-tags">
+                                        <a href="#">sql</a>
+                                        <a href="#">Angular</a>
+                                        <a href="#">Vue</a>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <a href="#">
+                                            <img src="https://www.gravatar.com/avatar/64323e6cf08401474da3bf770ea13b58?s=48&d=identicon&r=PG&f=1">
+                                        </a>
+                                    </div>
+                                    <div class="user-details">
+                                        <a href="#">Gaby Goole</a>
+                                        <span class="user-location">China SICAU</span>
+                                        <span class="user-grade">2014</span>
+                                    </div>
+                                    <div class="user-tags">
+                                        <a href="#">sql</a>
+                                        <a href="#">Angular</a>
+                                        <a href="#">Vue</a>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <a href="#">
+                                            <img src="https://www.gravatar.com/avatar/4af3541c00d591e9a518b9c0b3b1190a?s=48&d=identicon&r=PG">
+                                        </a>
+                                    </div>
+                                    <div class="user-details">
+                                        <a href="#">Gaby Goole</a>
+                                        <span class="user-location">China SICAU</span>
+                                        <span class="user-grade">2014</span>
+                                    </div>
+                                    <div class="user-tags">
+                                        <a href="#">sql</a>
+                                        <a href="#">Angular</a>
+                                        <a href="#">Vue</a>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="user-info">
+                                    <div class="user-avatar">
+                                        <a href="#">
+                                            <img src="https://www.gravatar.com/avatar/fbb4d027695dfdf76bf448b15d7e306a?s=48&d=identicon&r=PG">
+                                        </a>
+                                    </div>
+                                    <div class="user-details">
+                                        <a href="#">Gaby Goole</a>
+                                        <span class="user-location">China SICAU</span>
+                                        <span class="user-grade">2014</span>
+                                    </div>
+                                    <div class="user-tags">
+                                        <a href="#">sql</a>
+                                        <a href="#">Angular</a>
+                                        <a href="#">Vue</a>
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                     </tbody>
+                 </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer"></div>
 
 </body>
 </html>
