@@ -35,7 +35,7 @@
     /*margin-bottom: 16px;*/
     /*line-height: 1.3;*/
 }
-.main-part .pa-vertical .pa-horizontal .col-gy-5 .signup {
+ .col-gy-5 .signup {
     max-width: 349.7px;
 }
 
@@ -61,10 +61,10 @@
 
 /*中等屏幕大小*/
 @media only screen and (min-width: 380px) {
-    .main-part .pa-vertical .pa-horizontal .col-gy-5 .signup {
+    .col-gy-5 .signup {
         margin: 0 auto;
     }
-    .main-part .pa-vertical .pa-horizontal .col-gy-7 {
+     .col-gy-7 {
         text-align: center;
     }
 }
@@ -80,7 +80,7 @@
         padding-right: 140px;
     }
 
-    .main-part .pa-vertical .pa-horizontal .col-gy-7 {
+     .col-gy-7 {
              width: 58.333%;
              float: left;
              text-align: left;

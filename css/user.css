@@ -83,11 +83,18 @@
 .user-details {
     float: left;
     margin-left: 9px;
+    color: #6a737c;
 }
 
+.user-grade {
+    font-weight: bold;
+}
 .user-tags {
     clear: both;
     margin-left: 57px;
+}
+.user-tags > a {
+    color: #6a737c;
 }
 
 .user-name {
