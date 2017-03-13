@@ -1,0 +1,132 @@
+.navbar-default {
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.brand-icon {
+    padding-top: 0.438em;
+}
+
+.g-container {
+    margin-top: 120px;
+}
+
+.g-content {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.edit-part {
+    float:  left;
+    width: 665px;
+}
+
+label {
+    font-size: 13px;
+}
+
+.post-title {
+    padding-bottom: 20px;
+}
+
+#title {
+    width: 613px;
+    margin-left: 20px;
+}
+
+.input-box {
+    font-size: 14px;
+    border: 1px solid #c8ccd0;
+    padding: 8px 10px;
+    box-shadow: 0 1px 2px rgba(12,13,14,0.1) inset;
+}
+
+.edit-area {
+    margin-top: 30px;
+}
+
+#ref-wangEditor {
+    height: 290px;
+}
+
+.tags {
+    margin-top: 20px;
+    padding: 20px 0px;
+}
+.tags label {
+    display: block;
+}
+
+#post-tag {
+    margin-left: 0;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    position: relative;
+    top: 2.5px;
+    margin-right: 5px;
+}
+
+
+
+.post-option {
+    margin-top: 35px;
+}
+
+input[type=submit] {
+    border-radius: 2px;
+    padding: 6px 12px;
+}
+
+#just-post {
+    color: white;
+    background: #27ae60; /*颜色中档*/
+    border: 1px solid rgb(41, 149, 86);/*颜色深档*/
+    box-shadow: inset 0 1px 0 #1ed86c;/*颜色浅档*/
+    margin-right: 15px;
+}
+
+#save-asdraft {
+    color: white;
+    background: #0095ff;
+    border: 1px solid #07c;
+    box-shadow: inset 0 1px 0 #66bfff;
+}
+
+.suggest-part {
+    float: right;
+    width: 365px;
+    background: #FFF8DC;
+}
+
+.scroll-bar {
+    padding: 15px;
+}
+
+.scroll-bar h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.scroll-bar > p {
+    font-size: 14px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
