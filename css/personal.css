@@ -1,0 +1,205 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    background: #ddd;
+}
+header {
+    padding: 20px 0px;
+    background: #98dafc;
+    color: white;
+    box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
+}
+
+header > div {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.user-avatar {
+    width: 4em;
+    height: 4em;
+    float: left;
+}
+
+.cut-circle {
+    border-radius: 50%;
+}
+
+.user-introduction {
+    float: left;
+    width: 75%;
+}
+
+.user-introduction h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.user-introduction h2 {
+    font-size: 11px;
+    margin-top: 7px;
+    line-height: 17px;
+}
+
+.g-navbar {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.menu {
+    float: left;
+    width: 50%;
+    display: none;
+    transition: display 1s ease-out;
+    font-size: 130%;
+}
+
+.menu ul li {
+    padding: .2em 0 .2em 0.7em;
+}
+
+.menu a {
+    color: white;
+}
+.shownav {
+    display: block;
+}
+
+.menu > ul {
+    padding-left: 0px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+
+.g-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-part {
+    margin-top: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+    background: white;
+}
+
+article > h1 {
+    font-size: 27px;
+    padding: 20px 20px 5px 20px;
+    margin-bottom: 0px;
+}
+
+.article-content {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.article-content > p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.article-footer {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.glyphicon-upload {
+    margin-left: 7px;
+}
+
+.article-footer > a {
+    color: white;
+    padding: 3px;
+    background: #4abdac;
+}
+
+.g-pagination {
+    background: white;
+}
+
+.g-pagination > a:hover{
+    text-decoration: none;
+    background: #ccc;
+    transition: background 1s ease-out;
+}
+
+.page-number {
+    display: none;
+}
+
+.next-page {
+    float: right;
+    padding: 10px;
+}
+
+.side-part {
+    background: white;
+    margin-top: 20px;
+}
+
+.side-part h1 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.tag-list, .friend-list{
+    padding: 20px 0 10px 20px;
+    border-bottom: 1px solid #dadada;
+}
+
+
+.tag-list > ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.tag-list > ul > li {
+    display: inline-block;
+}
+
+.tag-list a {
+    padding: 3px;
+    background: #4abdac;
+    color: white;
+}
+
+.friend-list ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.friend-list a {
+    color: #817c7c;
+}
+.site-footer {
+    background: #1f1f1f;
+    color: white;
+}
+
+.site-footer h1 {
+    padding: 20px 20px 0px;
+    text-align: center;
+}
+
+.site-footer p {
+    text-align: center;
+}

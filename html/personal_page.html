@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/personal.css">
+</head>
+<body>
+    <!--头部-->
+    <header>
+        <div class="clearfix">
+            <div class="user-avatar">
+                <a href="#">
+                    <img src="https://www.gravatar.com/avatar/64323e6cf08401474da3bf770ea13b58?s=48&d=identicon&r=PG&f=1" class="cut-circle" alt="">
+                </a>
+            </div>
+
+            <div class="user-introduction">
+                <h1><span class="user-name">Gaby</span>'s blog</h1>
+                <h2>医药法律商业工程这些都是高贵的理想，也是维生的必要条件。但诗、美浪漫、爱这些才是我们生存的原因</h2>
+            </div>
+
+            <div class="g-navbar">
+                <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">网站首页</a></li>
+                    <li><a href="/">博客首页</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="tag.html">标签</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <!--主体-->
+    <div class="g-container">
+        <div class="main-part">
+            <article>
+                <h1>两年来用过的Ajax</h1>
+                <div class="article-content">
+                    <p>也就是常在Notwork里面看到的Type，可扩展超文本传输请求，向服务器提交请求，返回数据，实现局部更新网页。在IE V5.5及以上版本和其他浏览器中，可通过 new XMLHttpRequest()来创建XMLHttpRequest对象，而其他版本的IE需要通过new ActiveXObject()来创建，这也是第一句代码那样写的原因。</p>
+                </div>
+                <div class="article-footer">
+                    <span class="glyphicon glyphicon-pushpin"></span>
+                    <a href="#">Vue</a>
+                    <a href="#">Angular</a>
+                    <span class="glyphicon glyphicon-upload"></span>
+                    <span class="post-date">2017-3-15</span>
+                </div>
+            </article>
+            <article>
+                <h1>Visual Studio 使用过程中的几点心得</h1>
+                <div class="article-content">
+                    <p>随着大家编程技能的提高，现在AJAX的使用已经成了入门的技能了，实际上已经不能说是技能，也就是一个知识点。当然，ASP.NET本身封装了AJAX的方法，但是从NuGet扩展的分页PagedListque却不是异步的，所以为了统一，索性把分页，搜索，添加，删除，修改，全部用JQuery的Ajax完成。</p>
+                </div>
+                <div class="article-footer">
+                    <span class="glyphicon glyphicon-pushpin"></span>
+                    <a href="#">.NET</a>
+                    <a href="#">Bootstrap</a>
+                    <span class="glyphicon glyphicon-upload"></span>
+                    <span class="post-date">2017-3-15</span>
+                </div>
+            </article>
+
+            <article>
+                <h1>Web部署 svg/woff/woff2字体 404错误</h1>
+                <div class="article-content">
+                    <p>到读取它为止从服务器接收到的相应体，没有说到就是空字符，那么由readState状态描述可知，当readyState小于3之前，它肯定是空字符了，知道readyState为4时，它才保存了完整的相应体。
+                    </p>
+                </div>
+                <div class="article-footer">
+                    <span class="glyphicon glyphicon-pushpin"></span>
+                    <a href="#">Gulp</a>
+                    <a href="#">Node.js</a>
+                    <span class="glyphicon glyphicon-upload"></span>
+                    <span class="post-date">2017-3-15</span>
+                </div>
+            </article>
+
+            <nav class="g-pagination clearfix">
+                <span class="page-number current">1</span>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="next-page">
+                    Next<span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </nav>
+
+        </div>
+
+        <div class="side-part">
+            <div class="tag-list">
+                <h1>标签</h1>
+                <ul>
+                    <li><a>.NET</a></li>
+                    <li><a>Git</a></li>
+                    <li><a>Gulp</a></li>
+                    <li><a>Node.js</a></li>
+                    <li><a>Android</a></li>
+                </ul>
+            </div>
+
+            <div class="friend-list">
+                <h1>友情链接</h1>
+                <ul>
+                    <li><a href="#">浪淘沙的博客</a></li>
+                    <li><a href="#">GabyGoole的博客</a></li>
+                    <li><a href="#">咀嚼之味</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="site-footer">
+        <h1>Talk is cheap,show me the code!</h1>
+        <p>Powered by <a href="#">Gaby</a> and <a href="#">Dudeping</a>  © 2017 All rights reserved
+        </p>
+    </div>
+
+    <!--<script src="../js/jquery-3.1.1.min.js"></script>-->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/stretch.js"></script>
+</body>
+</html>
