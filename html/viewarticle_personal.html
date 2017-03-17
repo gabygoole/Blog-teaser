@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在个人博客里面查看文章</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/personal.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="clearfix">
+        <div class="user-avatar">
+            <a href="#">
+                <img src="https://www.gravatar.com/avatar/64323e6cf08401474da3bf770ea13b58?s=48&d=identicon&r=PG&f=1" class="cut-circle" alt="">
+            </a>
+        </div>
+
+        <div class="user-introduction">
+            <h1 class="site-name"><span class="user-name">Gaby</span>'s blog</h1>
+            <h2 class="motto">医药法律商业工程这些都是高贵的理想，也是维生的必要条件。但诗、美浪漫、爱这些才是我们生存的原因</h2>
+        </div>
+
+        <div class="g-navbar">
+            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="/">博客首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="tag.html">标签</a></li>
+            </ul>
+        </div>
+    </div>
+
+</header>
+
+<!--主体-->
+<div class="g-container clearfix">
+    <div class="main-part">
+        <article>
+            <div class="article-header">
+                <h1>两年来用过的Ajax</h1>
+                <p><span class="glyphicon glyphicon-time"></span> 发表于<span class="post-time">2015-12-27</span></p>
+            </div>
+            <div class="article-content alt">
+                <div id="post-body"><p>La、Lb线性链表升序排列，将结果放在Lc链表里。之前有文章写过两个有序链表的合并</p>
+                    <p>区别在于，前面的做法是保留La的头节点，free掉Lb的头节点，将余下节点串起来。这种方法是面向过程编程</p>
+                    <p>而现在讨论的做法，是单独建立一个Lc链表，利用一些已经写好的基本操作函数来完成，这种模块化编程做法实际上还简单些。不光模块函数里写不了几行，在调用这些函数时减少了不必要的琐碎过程的思考时间。</p>
+                    <p>&nbsp;</p>
+                    <p>该做法的核心思想：将每轮比较过后偏小的那个节点从相应链表中删除（这是头节点的指针不会指向该节点了，但该节点的空间依旧保留），append（附加）到Lc链表。pa、pb始终指向当前La、Lb链表的第一个节点（头节点后面那个），最后会free掉La、Lb的头节点</p>
+                </div>
+            </div>
+            <div class="article-footer">
+                <span class="glyphicon glyphicon-pushpin"></span>
+                <a href="#">Vue</a>
+                <a href="#">Angular</a>
+            </div>
+        </article>
+
+
+        <nav class="g-pagination clearfix set-color">
+            <div class="g-pre">
+                <a href="#">
+                    <strong>上一篇</strong>
+                    <br>
+                    <span class="glyphicon glyphicon-menu-left"></span><span class="pre-article">Web部署字体 404错误</span>
+                </a>
+            </div>
+            <div class="g-next">
+                <a href="#">
+                    <strong>下一篇</strong>
+                    <br>
+                    <span class="next-article">Visual Studio 使用过程中的几点心得</span><span
+                        class="glyphicon glyphicon-menu-right"></span>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="side-part">
+        <div class="tag-list">
+            <h1>标签</h1>
+            <ul>
+                <li><a>.NET</a></li>
+                <li><a>Git</a></li>
+                <li><a>Gulp</a></li>
+                <li><a>Node.js</a></li>
+                <li><a>Android</a></li>
+            </ul>
+        </div>
+
+        <div class="friend-list">
+            <h1>友情链接</h1>
+            <ul>
+                <li><a href="#">浪淘沙的博客</a></li>
+                <li><a href="#">GabyGoole的博客</a></li>
+                <li><a href="#">咀嚼之味</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="site-footer">
+    <h1>Talk is cheap,show me the code!</h1>
+    <p>© 2017 All rights reserved
+    </p>
+</div>
+
+<!--<script src="../js/jquery-3.1.1.min.js"></script>-->
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/stretch.js"></script>
+</body>
+</html>

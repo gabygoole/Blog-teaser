@@ -17,7 +17,7 @@ body {
 }
 header {
     padding: 20px 0px;
-    background: #98dafc;
+    background: #3fb0ac;
     color: white;
     box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
 }
@@ -99,7 +99,23 @@ article {
     background: white;
 }
 
-article > h1 {
+.article-header {
+    border-bottom: 1px solid #dadada;
+    padding-left: 10px;
+}
+
+.article-header > p {
+    text-align: right;
+    padding-right: 20px;
+    color: #817c7c;
+}
+
+.glyphicon-time {
+    position: relative;
+    top: 2px;
+}
+
+article  h1 {
     font-size: 27px;
     padding: 20px 20px 5px 20px;
     margin-bottom: 0px;
@@ -110,6 +126,16 @@ article > h1 {
     margin-bottom: 10px;
 }
 
+.alt {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 24px;
+}
+
+#post-body {
+    margin-top: 40px;
+    padding-left: 10px;
+}
 .article-content > p {
     font-size: 16px;
     margin: 0;
@@ -200,6 +226,7 @@ article > h1 {
 .site-footer h1 {
     padding: 20px 20px 0px;
     text-align: center;
+    font-size: 24px;
 }
 
 .site-footer p {
@@ -257,4 +284,38 @@ article > h1 {
     .g-navbar {
         display: none;
     }
+}
+
+/*专门为viewarticle_personal.html写的前后篇的切换*/
+.set-color a{
+    color: #2ca6cb;
+    display: block;
+    transition: color 0.25s, background 0.5s;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.set-color a:hover {
+    background: #2ca6cb;
+    color: white;
+    text-decoration: none;
+}
+
+.set-color strong, .set-color span {
+    line-height: 29px;
+}
+
+
+.g-pre {
+    float: left;
+    width: 45%;
+}
+
+.g-next {
+    float: right;
+    width: 45%;
+}
+
+.g-pre:hover {
+
 }
