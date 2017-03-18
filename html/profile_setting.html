@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/blog_manager.css">
+    <link rel="stylesheet" href="../css/profile_set.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-icon" href="#">
+                <img src="../icon/brand.png" alt="">
+            </a>
+            <a class="navbar-brand" href="#">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="">用户</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">选项 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="g-container">
+    <div class="page-content clearfix">
+        <div class="col-gy-4">
+            <nav class="menu">
+                <h3 class="menu-header">操作</h3>
+                <a href="#" class="menu-item">添加新随笔</a>
+                <a href="#" class="menu-item">发表文章</a>
+                <a href="#" class="menu-item">草稿箱</a>
+                <a href="#" class="menu-item">修改密码</a>
+            </nav>
+        </div>
+
+        <div class="main-area col-gy-8">
+            <div class="sub-header">
+                <a href="#" class="header-item">随笔</a>
+                <a href="#" class="header-item">文章</a>
+                <a href="#" class="header-item">收藏</a>
+                <a href="#" class="selected header-item">设置</a>
+            </div>
+
+            <div class="set-part">
+                <div class="set-title">
+                    <h1>资料设置</h1>
+                </div>
+                <form action="" class="clearfix">
+                    <div class="user-details">
+                        <dl>
+                            <dt><label for="user-name">用户名</label></dt>
+                            <dd>
+                                <input type="text" class="input-box" value="Gaby" id="user-name">
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="user-email">邮箱</label></dt>
+                            <dd>
+                                <input type="text" class="input-box" value="419347932@qq.com" id="user-email">
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="user-faith">个人信条</label></dt>
+                            <dd>
+                                <textarea type="text" class="input-box" id="user-faith" placeholder="说出你喜欢的至理名言，我们将为你显示在你的博客主页"></textarea>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="user-school">学校 <p class="prompt">(请填写学校英文简写,如:SICAU)</label></dt>
+                            <dd>
+                                <input type="text" class="input-box" id="user-school" value="SICAU">
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt><label for="friend-link">友情链接 <p class="prompt">(此处的链接将会展示到你的博客首页的侧边栏)</p></label></dt>
+                            <dd>
+                                <input type="text" class="input-box" id="friend-link">
+                                <input type="text" class="input-box">
+                                <input type="text" class="input-box">
+                            </dd>
+                        </dl>
+                        <button type="submit" class="btn btn-default">更新资料</button>
+                    </div>
+
+                    <dl class="user-avatar">
+                       <dt><label>头像</label></dt>
+                        <dd>
+                            <img src="http://www.qq82.com//pic/2012615/20126151459631.jpg" alt="头像">
+                                <input type="file" class="upload-avatar">
+                        </dd>
+                    </dl>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
