@@ -1,0 +1,237 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    background: #ddd;
+}
+header {
+    padding: 20px 0px;
+    background: #3fb0ac;
+    color: white;
+    box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
+}
+
+header > div {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.user-avatar {
+    width: 4em;
+    height: 4em;
+    float: left;
+}
+
+.cut-circle {
+    border-radius: 50%;
+}
+
+.user-introduction {
+    float: left;
+    width: 75%;
+}
+
+.site-name {
+    font-size: 32px;
+    margin: 0;
+}
+
+.motto {
+    font-size: 11px;
+    margin-top: 7px;
+    line-height: 17px;
+}
+
+.g-navbar {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.menu {
+    float: left;
+    width: 50%;
+    display: none;
+    font-size: 130%;
+}
+
+.menu ul li {
+    padding: .2em 0 .2em 0.7em;
+}
+
+.menu a {
+    color: white;
+}
+.shownav {
+    display: block;
+}
+
+.menu > ul {
+    padding-left: 0px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+
+.g-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.g-container > div {
+    margin-top: 40px;
+    background: white;
+}
+
+.dashborad {
+    padding: 20px 40px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #666666;
+}
+
+.number {
+    font-weight: 700;
+    font-size: 17px;
+    color: #0c0d0e;
+}
+
+.g-col-2 {
+    width: 25%;
+    float: left;
+}
+
+.g-col-3 {
+    width: 25%;
+    float: left;
+}
+
+.g-col-5 {
+    width: 25%;
+    float: left;
+    padding-left: 10px;
+}
+
+.user-static {
+    padding-bottom: 20px;
+}
+
+.user-static span {
+    display: block;
+}
+
+
+/*.user-static > div {*/
+    /*margin-left: 5px;*/
+/*}*/
+
+.user-overview ul, .top-tags ul {
+    padding-left: 0px;
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+
+.user-overview > ul > li {
+    padding: 5px 0px;
+}
+
+.glyphicon {
+    margin-right: 4px;
+    position: relative;
+    top: 2px;
+}
+
+.top-tags, .contact {
+    padding: 9px 40px 20px;
+}
+
+.top-tags > h1, .contact > h1 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tag-list li {
+    display: inline-block;
+}
+
+.tag-list a {
+    background: #cee0ed;
+    padding: 5px;
+}
+
+.site-footer {
+    background: #1f1f1f;
+    color: white;
+}
+
+.site-footer h1 {
+    padding: 20px 20px 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.site-footer p {
+    text-align: center;
+}
+
+/*768px*/
+@media only screen and (min-width: 768px){
+    .motto {
+        font-size: 110%;
+    }
+
+    .site-name {
+        font-size: 240%;
+    }
+
+    .g-container {
+        width: 70%;
+    }
+}
+
+/*1024px以后*/
+@media only screen and (min-width: 1024px){
+    .motto {
+        font-size: 120%;
+        line-height: 26px;
+    }
+
+    .site-name {
+        font-size: 280%;
+    }
+
+    .menu {
+        display: block;
+        float: right;
+        margin-top: 20px;
+    }
+
+    .menu ul li {
+        float: left;
+        display: inline-block;
+        margin-left: 36px;
+    }
+
+    .g-navbar {
+        display: none;
+    }
+
+    .g-container {
+        width: 40%;
+    }
+
+}
