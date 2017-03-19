@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页的查看文章界面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/view_mainpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-icon" href="#">
+                <img src="../icon/brand.png" alt="">
+            </a>
+            <a class="navbar-brand" href="#">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="">用户</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">选项 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="page-content">
+    <article>
+        <div class="article-header">
+            <h1>两年来用过的Ajax</h1>
+            <p class="status-line">
+                <span class="post-date">2015-12-24</span> - 浏览量 : <span class="article-view">3500次</span> |
+                <a href="#" class="move">.NET</a>
+                <a href="#">Ajax</a>
+            </p>
+        </div>
+
+        <div class="article-content">
+            <p><strong>Hit Kounter</strong> 是一个简单的访问量统计工具。据我从数据库里的数据目测，现在已经拥有了 <strong>9 位用户</strong>！不过我要对这九位用户说声抱歉啦。</p>
+
+            <p>Hit Kounter 原本部署于 SAE 上，而近期 SAE 针对使用 MySQL 的应用开始收费。本项目只是一个本人使用业余时间开发的小工具；它本身包含的功能也很精简，并不适合使用付费服务。所以我已经将 Hit Kounter 服务迁移至 <strong>LeanCloud</strong> 上。原本部署在 SAE 上的服务预计在 <strong>五一假期</strong> 后下线，对已经使用 Hit Kounter 的一些用户，我再次表达我的歉意！</p>
+
+            <p>由于此次改版改动比较大，我是 fork 了一份代码出来进行修改的；<strong>改版后的 Hit Kounter</strong> 在 Github 上仓库地址是 <a href="https://github.com/zry656565/Hit-Kounter-LC">zry656565/Hit-Kounter-LC</a>，区别于原来的 Hit Kounter PHP 版：<a href="https://github.com/zry656565/Hit-Kounter">zry656565/Hit-Kounter</a></p>
+
+            <p>使用方式上，目前 <strong>v0.2</strong> 版本相比于 <strong>v0.1</strong> 并没有什么改变，接下来会从以下几个方面介绍一下：</p>
+
+            <ul>
+                <li>如何为你的博客添加访问统计</li>
+                <li>Hit Kounter 的 JS 接口</li>
+                <li>如何从 v0.1.1 版本迁移到 v0.2.0</li>
+                <li>小结：Hit Kounter 的未来</li>
+            </ul>
+
+            <p>如果你是 Hit Kounter v0.1 的用户，可以直接阅读 <strong>如何从 v0.1.1 版本迁移到 v0.2.0</strong>。</p>
+
+        </div>
+        <div class="article-footer">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <a href="#">
+                        <img id="user-photo" src="https://www.gravatar.com/avatar/4af3541c00d591e9a518b9c0b3b1190a?s=48&d=identicon&r=PG" alt="用户头像">
+                    </a>
+                </div>
+                <div class="user-details">
+                    <a class="user-name" href="#">Gaby</a>
+                    <span class="user-school">SICAU</span>
+                </div>
+                <div class="user-sta">
+                    <p>随笔 - <span class="essay">3</span> 文章 - <span class="article">5</span></p>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<div class="site-footer">
+    <h1>Talk is cheap,show me the code!</h1>
+    <p>© 2017 All rights reserved
+    </p>
+</div>
+
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

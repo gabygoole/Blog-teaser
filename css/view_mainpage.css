@@ -1,0 +1,117 @@
+.navbar-default {
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.brand-icon {
+    padding-top: 0.438em;
+}
+
+.page-content {
+    width: 75%;
+    margin: 10.25em auto;
+}
+
+.article-header {
+    margin-bottom: 40px;
+}
+
+.article-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.status-line {
+    font-size: 15px;
+    margin-top: 20px;
+    color: #818181;
+}
+
+.status-line > a {
+    background: black;
+    color: white;
+    padding: 3px;
+    margin-right: 4px;
+}
+
+.article-content {
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dadada;
+}
+.move {
+    margin-left: 10px;
+}
+
+.user-info {
+    width: 60%;
+    margin-top: 20px;
+    float: right;
+    background: #E0EAF1;
+    padding: 10px;
+}
+
+.user-avatar {
+    float: left;
+    box-shadow: 2px 2px 4px rgba(12,13,14,0.5);
+}
+
+img#user-photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 1px;
+}
+.user-details {
+    float: left;
+    margin-left: 10px;
+}
+
+.user-details > span {
+    display: block;
+}
+
+.user-details a.user-name {
+    font-size: 13px;
+}
+
+span.user-school, .user-sta {
+    font-size: 12px;
+    color: #6a737c;
+}
+
+.user-sta {
+    clear: both;
+    margin-left: 43px;
+}
+
+.user-sta p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .user-info {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .user-info {
+        width: 20%;
+    }
+}
+
+.site-footer {
+    background: #1f1f1f;
+    color: white;
+}
+
+.site-footer h1 {
+    padding: 20px 20px 0px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.site-footer p {
+    text-align: center;
+}
