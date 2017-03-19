@@ -59,6 +59,9 @@
     margin-top: 10px;
 }
 
+.btn-primary:hover {
+    background-color: #1f9e5a;
+}
 /*中等屏幕大小*/
 @media only screen and (min-width: 380px) {
     .col-gy-5 .signup {

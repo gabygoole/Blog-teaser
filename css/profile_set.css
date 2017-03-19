@@ -49,3 +49,7 @@
 .btn {
     margin-bottom: 20px;
 }
+
+.btn-primary {
+    background: green;
+}
