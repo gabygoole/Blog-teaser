@@ -43,18 +43,13 @@ a:hover {
     color: #00CCCC;
 }
 
-.posts .post-item > p:after{
-    content: "阅读更多»";
-    cursor: pointer;
+.readmore, .readmore:hover {
     color: #5bc0de;
     text-decoration: underline;
     margin-left: 0.714em;
 }
-/*如何after后hover
-.posts .post-item > p::after:hover {
-    color: red;
-}
-*/
+
+
 .posts .post-item .post-footer {
     margin-bottom: 1.5em;
 }
@@ -62,14 +57,25 @@ a:hover {
 .posts .post-item .post-footer .loc {
     margin-left: 0.4em;
 }
-
-.posts .post-item .post-footer a {
-    background: black;
-    color: white;
-    padding: 3px;
-    margin-right: 4px;
+/*fuck*/
+.user-name {
+    margin-right: 3px;
 }
 
+.essay {
+    background: #FF9900;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.article {
+    background: #33CC99;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+/*fuck*/
 .posts .post-item p {
     margin: 1em 0;
 }
@@ -84,7 +90,7 @@ a:hover {
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
-    background: black;
+    background: #5bc0de;
     color: white;
     display: inline-block;
     text-align: center;
@@ -95,7 +101,7 @@ a:hover {
 .gpagination .current {
     background: white;
     color: black;
-    border: 1px solid black;
+    border: 1px solid #5bc0de;
 }
 
 .gpagination > a:hover{
@@ -225,7 +231,11 @@ a:hover {
     }
 
 }
+/*给用户向主页准备的样式*/
+.navbar-nav>li>a.kick {
+    padding-top: 7.8px;
+}
 
-
-
-
+.navbar-default .navbar-nav>.open>a.kick, .navbar-default .navbar-nav>.open>a.kick:focus, .navbar-default .navbar-nav>.open>a.kick:hover {
+    background: transparent;
+}

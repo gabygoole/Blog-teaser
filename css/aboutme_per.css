@@ -87,7 +87,7 @@ header > div {
 
 .g-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
 }
 
 .g-container > div {
@@ -165,6 +165,7 @@ header > div {
 
 .tag-list li {
     display: inline-block;
+    margin-bottom: 12px;
 }
 
 .tag-list a {

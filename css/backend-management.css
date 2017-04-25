@@ -1,0 +1,49 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+.box {
+    width: 220px;
+    box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.left {
+    float: left;
+    width: 35%;
+    padding: 18.5px;
+    background: #30a6ff;
+    color: white;
+}
+
+.lg {
+    font-size: 41px;
+}
+
+.right {
+    float: left;
+    width: 65%;
+    text-align: center;
+}
+
+.right .new-add {
+    font-size: 40px;
+}
+
+.right .explain {
+    font-size: 16px;
+    color: #666666;
+}

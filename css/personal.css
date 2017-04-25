@@ -87,7 +87,7 @@ header > div {
 
 .g-container {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
 }
 
 .main-part {
@@ -150,7 +150,29 @@ article  h1 {
 .glyphicon-upload {
     margin-left: 7px;
 }
+/*要添加的代码*/
+.loc {
+    margin-left: 0.4em;
+}
 
+.essay {
+    background: #FF9900;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.article {
+    background: #33CC99;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.collected {
+    margin-right: 3px;
+}
+/*截至*/
 .article-footer > a {
     color: white;
     padding: 3px;
@@ -221,10 +243,12 @@ article  h1 {
 .site-footer {
     background: #1f1f1f;
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .site-footer h1 {
-    padding: 20px 20px 0px;
     text-align: center;
     font-size: 24px;
 }

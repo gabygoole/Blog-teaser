@@ -2,7 +2,8 @@
  * Created by Gaby on 3/19/2017.
  */
 AddloadEvent(prepareButton);
-AddloadEvent(changeInputBackground())
+AddloadEvent(changeInputBackground);
+
 function prepareButton() {
     if(!document.getElementsByClassName) {
         return false;
@@ -23,6 +24,12 @@ function changeState(button) {
         button.style.borderColor = 'white';
         var ellipsis = document.createTextNode('...');
         button.appendChild(ellipsis);
+        var btnID = button.getAttribute('id');
+
+            window.location.href = "index.html";
+            return false;
+
+
     }
 }
 
