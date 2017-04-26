@@ -9,7 +9,8 @@
 
 .page-content {
     width: 85%;
-    margin: 10.25em auto;
+    /*这里要改*/
+    margin: 10.25em auto 70px;
 }
 
 

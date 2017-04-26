@@ -14,18 +14,21 @@
 
 
 .box {
-    width: 220px;
+    float: left;
+    width: 80%;
     box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
-    position: absolute;
-    top: 60px;
-    left: 60px;
+    margin-bottom: 55px;
+}
+
+.box:hover {
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .left {
     float: left;
     width: 35%;
     padding: 18.5px;
-    background: #30a6ff;
     color: white;
 }
 
@@ -46,4 +49,71 @@
 .right .explain {
     font-size: 16px;
     color: #666666;
+}
+
+.board-explain {
+    font-size: 26px;
+    color: #666666;
+    margin-top: 20px;
+}
+
+
+
+.y-padding td {
+    width: 30%;
+}
+
+#new-feeds {
+    background: #30a6ff;
+}
+
+#new-blogs {
+    background: #feb63e;
+}
+
+#new-users {
+    background: #1dc0af;
+}
+
+#new-logs {
+    background: #f9253e;
+}
+
+#new-tags {
+    background: #fe5722;
+}
+
+#billboard {
+    background: #2455a4;
+}
+
+.align {
+    padding-left: 13%;
+}
+
+@media only screen and (min-width: 627px) {
+    .align {
+        padding-left: 9%;
+    }
+
+    .box {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width:760px) {
+    .align {
+        padding-top: 6%;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .box {
+        margin-left: 60px;
+        width: 220px;
+    }
+
+    .align {
+        padding-left: 8%;
+    }
 }
