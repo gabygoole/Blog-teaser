@@ -71,35 +71,106 @@
             <th>标题</th>
             <th>发送人</th>
             <th>操作</th>
-            <th class="manufacture">操作</th>
+            <th class="short-th">操作</th>
         </tr>
         <tr>
-            <td data-label="标题">账号遗失</td>
-            <td data-label="发送人">Gaby</td>
-            <td data-label="操作"><a href="#" class="g-btn view">查看</a></td>
-            <td data-label="操作"><a href="#" class="g-btn reply">回复</a></td>
-        </tr>
-
-        <tr>
-            <td data-label="标题">密码找回</td>
-            <td data-label="发送人">Lucy</td>
-            <td data-label="操作"><a href="#" class="g-btn view">查看</a></td>
-            <td data-label="操作"><a href="#" class="g-btn reply">回复</a></td>
+            <td data-label="标题" class="title">账号遗失</td>
+            <td data-label="发送人" class="name">Gaby</td>
+            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#view-feedback" type="button" class="g-btn view">查看</a></td>
+            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#reply-feedback" type="button" class="g-btn reply">回复</a></td>
         </tr>
 
         <tr>
-            <td data-label="标题">博文被删</td>
-            <td data-label="发送人">Jimmy</td>
-            <td data-label="操作"><a href="#" class="g-btn view">查看</a></td>
-            <td data-label="操作"><a href="#" class="g-btn reply">回复</a></td>
+            <td data-label="标题" class="title">密码找回</td>
+            <td data-label="发送人" class="name">Lucy</td>
+            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#view-feedback" type="button" class="g-btn view">查看</a></td>
+            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#reply-feedback" type="button" class="g-btn reply">回复</a></td>
+        </tr>
+
+        <tr>
+            <td data-label="标题" class="title">博文被删</td>
+            <td data-label="发送人" class="name">Jimmy</td>
+            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#view-feedback" type="button" class="g-btn view">查看</a></td>
+            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#reply-feedback" type="button" class="g-btn reply">回复</a></td>
         </tr>
     </table>
 </div>
 
+
+
+<!-- 查看内容的模态框 -->
+<div class="modal fade" id="view-feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">@Gaby</h4>
+            </div>
+            <div class="modal-body">
+                <h4>百度账户被盗,求助！</h4>
+                <p>百度账号被盗，打客服电话，客户让我人工申诉，已经申诉三次，都失败了！！！
+                    下面的这些截图：
+                <p>
+                <ul>
+                    <li>是盗号者改了我的绑定邮箱</li>
+                    <li>盗号者改了我的手机</li>
+                    <li>我账户里搜索出来的相关邮件</li>
+                    <li>百度旅游 App 还在登登录的状态</li>
+                </ul>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--回复的模态框-->
+<div class="modal fade" id="reply-feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel"><span id="user-name"></span><span id="feed-title"></span></h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">收件人</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">内容</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">发送</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="../js/jquery-3.1.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script>
-    $("tr:odd").css("background-color","rgba(221, 221, 221, 0.17)");
+    $('#view-feedback').on('show.bs.modal', function (event) {});
+    $('#reply-feedback').on('show.bs.modal', function (event) {
+        var $button = $(event.relatedTarget);
+        var $modal = $(this);
+        var name = $button.parent().siblings(".name").text();
+        var title = $button.parent().siblings(".title").text();
+
+        $modal.find("#user-name").text("@" + name).end()
+            .find("#feed-title").text(title);
+    });
+
+    $(".reply").click(function () {
+       $(this).html("已答复<span class='glyphicon glyphicon-ok'></span>");
+
+    });
 </script>
 </body>
 </html>

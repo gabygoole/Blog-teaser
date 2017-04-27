@@ -19,6 +19,7 @@ tr th,tr td{
     border-radius: 5px;
     font-size: 12px;
 }
+
 .view {
     background-color: #5cb85c;
 }
@@ -27,13 +28,36 @@ tr th,tr td{
     background-color: #f0ad4e;
 }
 
+.gag {
+    background-color: #f0ad4e;
+}
+
+.delete {
+    background-color: #d9534f;
+}
+
 .post-header {
     background-color: rgba(162, 17, 17, 0.62);
     color: white;
 }
 
-.manufacture {
+.short-th {
     width: 70px;
+}
+
+textarea.form-control {
+    height: 250px;
+}
+
+#feed-title {
+    margin-left: 20px;
+}
+
+a:focus,
+a:hover {
+    color: white;
+    text-decoration: none;
+    outline: none;
 }
 
 @media only screen and (max-width: 568px) {
