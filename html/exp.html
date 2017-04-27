@@ -4,20 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/backend-management.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 <body>
-<a href="">
-    <div class="box clearfix">
-        <div class="left">
-            <span class="glyphicon glyphicon-envelope lg"></span>
-        </div>
-        <div class="right">
-            <span class="new-add">+0</span>
-            <br>
-            <span class="explain">意见反馈</span>
-        </div>
-    </div>
-</a>
+
+<button id="test2">小小提示层</button>
+<button id="test3">小小提示层</button>
+
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/layer/layer.js"></script>
+<script>
+
+    $('#test3').on("click",function () {
+        layer.open({
+            type: 2,
+            content: 'settop.html',
+            success: function(layero, index){
+                var $content = "wo shi shui";
+                var show = layer.getChildFrame('#show', index);
+                show.text($content);
+                console.log(show.text()) //得到iframe页的body内容
+            }
+        });
+    })
+
+    $('#test2').on("click",function () {
+        layer.open({
+            type: 2 //此处以iframe举例
+            ,title: '意见反馈'
+            ,area: ['390px', '330px']
+            ,shade: 0
+            ,offset: [ //为了演示，随机坐标
+                Math.random()*($(window).height()-300)
+                ,Math.random()*($(window).width()-390)
+            ]
+            ,maxmin: true
+            ,content: 'settop.html'
+            ,btn: ['关闭', '发送'] //只是为了演示
+            ,yes: function(index, layero){
+                index.close();
+            }
+            ,btn2: function(){
+                var box = layer.getChildFrame('#input-box', index);
+                var show = layer.getChildFrame('#show', index);
+                var $content = box.val();
+                show.text($content);
+            }
+    });
+    })
+
+</script>
 </body>
 </html>
