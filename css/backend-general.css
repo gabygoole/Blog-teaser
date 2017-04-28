@@ -24,12 +24,14 @@ tr th,tr td{
     background-color: #5cb85c;
 }
 
-.reply {
+.reply,
+.gag {
     background-color: #f0ad4e;
 }
 
-.gag {
-    background-color: #f0ad4e;
+.gag:hover,
+.reply:hover {
+    background-color: rgba(236, 143, 10, 0.89);
 }
 
 .delete {
@@ -60,6 +62,22 @@ a:hover {
     outline: none;
 }
 
+.gsearch-box {
+    width: 30%;
+    margin: 0 auto 40px;
+    height: 40px;
+}
+
+.dropdown {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 0px;
+}
+
+
 @media only screen and (max-width: 568px) {
     .post-header {
         display: none;
@@ -89,4 +107,15 @@ a:hover {
         border-bottom: none;
     }
 
+    .gsearch-box {
+        width: 60%;
+    }
+
+
+}
+
+@media only screen and (min-width: 568px) and (max-width: 1024px){
+    .gsearch-box {
+        width: 40%;
+    }
 }

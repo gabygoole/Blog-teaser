@@ -2,9 +2,146 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>博客管理</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/backend-general.css">
+    <link rel="stylesheet" href="../css/mainpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-icon" href="/">
+                <img src="/icon/caticon.png" />
+            </a>
+            <a class="navbar-brand" href="/">KickUs</a>
+        </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="feedback.html">意见反馈</a></li>
+                <li><a href="/Admin/ManageUsers">用户管理</a></li>
+                <li><a href="/Admin/ManageBLogs">博客管理</a></li>
+                <li><a href="/Admin/ManageSysNews">公告管理</a></li>
+                <li><a href="/Admin/ManageTags">标签管理</a></li>
+                <li><a href="/Admin/ManageLogs">日志记录</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle kick" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="/icon/avatar.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        <li><a href="/Users/Index/2">个人主页</a></li>
+                        <li><a href="/ManageBlogs/Index?type=Jotting">博客管理</a></li>
+                        <li><a href="/Settings/Index">个人资料</a></li>
+                        <li><a href="/Account/ChangePassword">修改密码</a></li>
+                        <li><a href="/Account/Logout">注销</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form action="/" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" name="searchStr" class="form-control" placeholder="输入标题搜索">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--page_content-->
+<div class="page-content">
+    <h1 class="header">博客管理</h1>
+    <input type="text" name="searchStr" class="form-control gsearch-box">
+    <table>
+        <tr class="post-header">
+            <th>博文名</th>
+            <th>作者</th>
+            <th>发布日期</th>
+            <th class="short-th">浏览量</th>
+            <th class="short-th">设置</th>
+            <th class="short-th">操作</th>
+        </tr>
+
+        <tr>
+            <td data-label="博文名">ASP.NET MVC 开发 -- 配置Web Deploy远程部署</td>
+            <td data-label="作者">DepingDu</td>
+            <td data-label="发布日期">2017/4/27</td>
+            <td data-label="浏览量">321</td>
+            <td data-label="设置">
+                <div class="dropdown">
+                <a class="g-btn gag" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    公开
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#" class="whether-public">不公开</a></li>
+                    <li><a href="#" class="whether-public">公开</a></li>
+                </ul>
+                </div>
+            </td>
+            <td data-label="操作"><a href="#" class="g-btn delete">删除</a></td>
+        </tr>
+
+        <tr>
+            <td data-label="博文名">ASP.NET MVC 开发 -- 安装SSL证书</td>
+            <td data-label="作者">DepingDu</td>
+            <td data-label="发布日期">2017/4/27</td>
+            <td data-label="浏览量">321</td>
+            <td data-label="设置">
+                <div class="dropdown">
+                    <a class="g-btn gag" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        公开
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#" class="whether-public">不公开</a></li>
+                        <li><a href="#" class="whether-public">公开</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td data-label="操作"><a href="#" class="g-btn delete">删除</a></td>
+        </tr>
+
+        <tr>
+            <td data-label="博文名">ASP.NET MVC 开发 -- 防盗链</td>
+            <td data-label="作者">DepingDu</td>
+            <td data-label="发布日期">2017/4/27</td>
+            <td data-label="浏览量">321</td>
+            <td data-label="设置">
+                <div class="dropdown">
+                    <a class="g-btn gag" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        公开
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#" class="whether-public">不公开</a></li>
+                        <li><a href="#" class="whether-public">公开</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td data-label="操作"><a href="#" class="g-btn delete">删除</a></td>
+        </tr>
+
+    </table>
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/backend_scripts.js"></script>
 </body>
 </html>

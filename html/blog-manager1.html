@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理随笔</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../css/blog_manager.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-icon" href="/">
+                <img src="/icon/caticon.png" />
+            </a>
+            <a class="navbar-brand" href="/">KickUs</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--page_content-->
+
+
+
+
+<div class="g-container">
+    <div class="page-content clearfix">
+        <div class="col-gy-4">
+            <nav class="menu">
+                <h3 class="menu-header">操作</h3>
+                <a href="/ManageBlogs/Create?type=Jotting" class="menu-item">添加随笔</a>
+                <a href="/ManageBlogs/Index?type=Article" class="menu-item">管理文章</a>
+                <a href="/ManageBlogs/Draft?type=Jotting" class="menu-item">草稿箱</a>
+                <a href="/Users/Feedback" class="menu-item">
+                    意见反馈<span class="glyphicon glyphicon-envelope prompt-icon"></span>
+                    <span class="new-feed">16</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="main-area col-gy-8">
+            <div class="sub-header">
+                <a href="/ManageBlogs/Index?type=Jotting" class="selected header-item">随笔</a>
+                <a href="/ManageBlogs/Index?type=Article" class="header-item">文章</a>
+                <a href="/ManageCollection/Index" class="header-item">收藏</a>
+                <a href="/Settings/Index" class="header-item">设置</a>
+            </div>
+
+            <div class="main-content">
+                <div class="post-list">
+                    <table>
+                        <tbody>
+                        <tr class="post-header">
+                            <th class="post-title">标题</th>
+                            <th class="post-status">发布状态</th>
+                            <th>发布日期</th>
+                            <th class="post-view">阅读数</th>
+                            <th>编辑</th>
+                            <th>删除</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $.get("/Home/LoginInfo", function (data) {
+            $("#bs-example-navbar-collapse-1").html(data);
+        });
+    });
+</script>
+
+
+</body>
+</html>

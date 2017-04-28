@@ -155,22 +155,6 @@
 </div>
 <script src="../js/jquery-3.1.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script>
-    $('#view-feedback').on('show.bs.modal', function (event) {});
-    $('#reply-feedback').on('show.bs.modal', function (event) {
-        var $button = $(event.relatedTarget);
-        var $modal = $(this);
-        var name = $button.parent().siblings(".name").text();
-        var title = $button.parent().siblings(".title").text();
-
-        $modal.find("#user-name").text("@" + name).end()
-            .find("#feed-title").text(title);
-    });
-
-    $(".reply").click(function () {
-       $(this).html("已答复<span class='glyphicon glyphicon-ok'></span>");
-
-    });
-</script>
+<script src="../js/backend_scripts.js"></script>
 </body>
 </html>

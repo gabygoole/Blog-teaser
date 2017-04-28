@@ -42,11 +42,40 @@
     border-bottom: 1px solid #e1e4e8;
     font-size: 14px;
     color: #0366d6;
+    position: relative;
 }
 
 .menu-item:last-child {
     border-bottom: 0px;
 }
+/*着里是要增加的*/
+.menu-item .prompt-icon {
+    color: rgba(128, 128, 128, 0.87);
+    top: 1.8px;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.menu-item .new-message,
+.menu-item .new-feed{
+    border-radius: 3px;
+    color: white;
+    padding: 0px 3px;
+    position: absolute;
+    left: 76px;
+    top: 5px;
+    font-size: 9px;
+}
+
+.menu-item .new-feed {
+    background: #f9ad59;
+}
+
+.menu-item .new-message {
+    background: #1ab395;
+}
+
+/*以上*/
 
 .g-container .main-area {
     float: left;
