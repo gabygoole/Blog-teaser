@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>博客管理</title>
+    <title>日志记录</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/backend-general.css">
     <link rel="stylesheet" href="../css/mainpage.css">
@@ -65,34 +65,46 @@
 </nav>
 <!--page_content-->
 <div class="page-content">
-    <h1 class="header">标签管理</h1>
+    <div class="center-element">
+        <h1 class="header g-inline">日志记录</h1>
+        <div class="btn-group g-inline vertical-align">
+            <button type="button" class="btn btn-success btn-xs">注册</button>
+            <button type="button" class="btn btn-success dropdown-toggle btn-xs horizontal-padding" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="blog_log_register.html">注册</a></li>
+                <li><a href="blog_log_login.html">登录</a></li>
+                <li><a href="#">添加博客</a></li>
+                <li><a href="blog_log_systemError.html">系统报错</a></li>
+            </ul>
+        </div>
+    </div>
+
     <table>
         <tr class="be-post-header">
-            <th>标签</th>
-            <th>建立者</th>
-            <th class="align lg-th">相关博文</th>
-            <th class="short-th">操作</th>
+            <th>用户</th>
+            <th class="middle-th">邮箱</th>
+            <th class="short-th">操作时间</th>
         </tr>
 
         <tr>
-            <td data-label="标签">.NET</td>
-            <td data-label="建立者">DepingDu</td>
-            <td data-label="相关博文" class="align">25</td>
-            <td data-label="操作"><a href="#" class="g-btn delete">删除</a></td>
+            <td data-label="用户">DepingDu</td>
+            <td data-label="邮箱">419347932@qq.com</td>
+            <td data-label="操作时间">2017/4/27</td>
         </tr>
 
         <tr>
-            <td data-label="标签">Web部署</td>
-            <td data-label="建立者">DepingDu</td>
-            <td data-label="相关博文" class="align">12</td>
-            <td data-label="操作"><a href="#" class="g-btn delete">删除</a></td>
+            <td data-label="用户">DepingDu</td>
+            <td data-label="邮箱">412660972@qq.com</td>
+            <td data-label="操作时间">2017/4/27</td>
         </tr>
 
         <tr>
-            <td data-label="标签">ASP.NET MVC</td>
-            <td data-label="建立者">DepingDu</td>
-            <td data-label="相关博文" class="align">8</td>
-            <td data-label="操作"><a href="#" class="g-btn delete">删除</a></td>
+            <td data-label="用户">DepingDu</td>
+            <td data-label="邮箱">123412342@qq.com</td>
+            <td data-label="操作时间">2017/4/27</td>
         </tr>
 
     </table>
@@ -102,3 +114,4 @@
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/backend_scripts.js"></script>
 </body>
+</html>

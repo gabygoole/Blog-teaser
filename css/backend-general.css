@@ -3,6 +3,8 @@
     font-weight: 300;
     margin-bottom: 40px;
 }
+
+
 table {
     width: 70%;
     margin: 0 auto;
@@ -38,13 +40,21 @@ tr th,tr td{
     background-color: #d9534f;
 }
 
-.post-header {
+.be-post-header {
     background-color: rgba(162, 17, 17, 0.62);
     color: white;
 }
 
+.middle-th {
+    width: 350px;
+}
+
 .short-th {
     width: 70px;
+}
+
+.lg-th {
+    width: 280px;
 }
 
 textarea.form-control {
@@ -68,6 +78,24 @@ a:hover {
     height: 40px;
 }
 
+
+.center-element {
+    text-align: center;
+}
+
+.g-inline {
+    display: inline-block;
+}
+
+.vertical-align {
+    top: -9px;
+    left: 9px;
+}
+
+.btn-group>.btn+.dropdown-toggle {
+    padding: 1px 5px;
+}
+
 .dropdown {
     display: inline-block;
     cursor: pointer;
@@ -77,9 +105,29 @@ a:hover {
     min-width: 0px;
 }
 
+.align {
+    text-align: center;
+}
 
+.asshole > table{
+    width: 100%;
+}
+
+.menu-item.be-selected:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2px;
+    background-color: #e36209;
+    bottom: 0px;
+}
+
+.g-loc {
+    margin: 0px;
+}
 @media only screen and (max-width: 568px) {
-    .post-header {
+    .be-post-header {
         display: none;
     }
 
@@ -110,7 +158,6 @@ a:hover {
     .gsearch-box {
         width: 60%;
     }
-
 
 }
 

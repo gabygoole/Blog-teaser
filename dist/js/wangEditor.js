@@ -1207,9 +1207,13 @@ _e(function (E, $) {
         }
     };
     Menu.fn._renderTip = function ($menuItem) {
+
+        //此处应有function d
+        //此处应有function e
         var self = this;
         var editor = self.editor;
         var title = self.title;
+
         var $tip = $('<div class="menu-tip"></div>');
         // var $triangle = $('<i class="tip-triangle"></i>'); // 小三角
 
@@ -1311,13 +1315,14 @@ _e(function (E, $) {
         }
         // 获取菜单定义的selected情况下的点击事件
         var clickEventSelected = self.clickEventSelected || clickEvent;
-
+//操你妈
         // 将事件绑定到菜单dom上
         $domNormal.click(function (e) {
             if (!self.disabled()) {
                 clickEvent.call(self, e);
                 self.updateSelected();
             }
+            $(".g-test").val().replace(/onerror*=*('[^']*'||"[^"]*")/g,'');
             e.preventDefault();
         });
         $domSelected.click(function (e) {
@@ -1325,6 +1330,8 @@ _e(function (E, $) {
                 clickEventSelected.call(self, e);
                 self.updateSelected();
             }
+            $(".g-test").val().replace(/onerror*=*('[^']*'||"[^"]*")/g,'');
+
             e.preventDefault();
         });
     };

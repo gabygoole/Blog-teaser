@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/blog_manager.css">
+    <link rel="stylesheet" href="../css/backend-general.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-icon" href="#">
+                <img src="../icon/brand.png" alt="">
+            </a>
+            <a class="navbar-brand" href="index.html">Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">关于我们</a></li>
+                <li><a href="users.html">用户</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">选项 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="g-container">
+    <div class="page-content clearfix">
+        <h1 class="header">博客管理</h1>
+        <div class="col-gy-4">
+            <nav class="menu">
+                <h3 class="menu-header">操作</h3>
+                <a href="#" class="menu-item be-selected">历史公告</a>
+                <a href="#" class="menu-item">发布公告</a>
+            </nav>
+        </div>
+
+        <div class="main-area col-gy-8">
+
+            <div class="main-content g-loc">
+                <div class="asshole">
+                    <table>
+                        <tr class="be-post-header">
+                            <th>标题</th>
+                            <th>发布时间</th>
+                            <th class="short-th">操作</th>
+
+                        </tr>
+                        <tr>
+                            <td data-label="标题" class="title">账号遗失</td>
+                            <td data-label="发布时间" class="name">Gaby</td>
+                            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#view-feedback" type="button" class="g-btn view">查看</a></td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="标题" class="title">密码找回</td>
+                            <td data-label="发布时间" class="name">Lucy</td>
+                            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#view-feedback" type="button" class="g-btn view">查看</a></td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="标题" class="title">博文被删</td>
+                            <td data-label="发布时间" class="name">Jimmy</td>
+                            <td data-label="操作"><a href="#" data-toggle="modal" data-target="#view-feedback" type="button" class="g-btn view">查看</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <!-- 查看内容的模态框 -->
+                <div class="modal fade" id="view-feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">@Gaby</h4>
+                            </div>
+                            <div class="modal-body">
+                                <h4>百度账户被盗,求助！</h4>
+                                <p>百度账号被盗，打客服电话，客户让我人工申诉，已经申诉三次，都失败了！！！
+                                    下面的这些截图：
+                                <p>
+                                <ul>
+                                    <li>是盗号者改了我的绑定邮箱</li>
+                                    <li>盗号者改了我的手机</li>
+                                    <li>我账户里搜索出来的相关邮件</li>
+                                    <li>百度旅游 App 还在登登录的状态</li>
+                                </ul>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-dismiss="modal">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/backend_scripts.js"></script>
+
+</body>
+</html>

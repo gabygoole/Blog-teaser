@@ -22,11 +22,12 @@ $(document).ready(function () {
     /*以下代码设置表格的斑马纹*/
     $("tr:odd").css("background-color","rgba(221, 221, 221, 0.17)");
 
-    /*以下代码用于下拉框选择后及时更改当前显示项的*/
+    /*以下代码用于下拉框选择后及时更改当前显示项的-博客监控页面*/
     $(".whether-public").click(function () {
         var choice = $(this).text();
         $(this).closest(".dropdown-menu")
             .prev()
             .html(choice + '<span class="caret"></span>');
     });
+
 })

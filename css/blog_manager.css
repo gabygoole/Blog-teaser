@@ -15,6 +15,7 @@
     margin: 0 auto;
     padding-top: 30px;
 }
+
 .page-content .col-gy-4 {
     width: 25%;
     float: left;
@@ -34,6 +35,8 @@
     border-bottom: 1px solid #e1e4e8;
     background: #f3f5f8;
     margin-top: 0px;
+    /*这里要改*/
+    margin-bottom: 0px;
 }
 
 .menu .menu-item {
@@ -48,34 +51,6 @@
 .menu-item:last-child {
     border-bottom: 0px;
 }
-/*着里是要增加的*/
-.menu-item .prompt-icon {
-    color: rgba(128, 128, 128, 0.87);
-    top: 1.8px;
-    font-size: 11px;
-    margin-left: 5px;
-}
-
-.menu-item .new-message,
-.menu-item .new-feed{
-    border-radius: 3px;
-    color: white;
-    padding: 0px 3px;
-    position: absolute;
-    left: 76px;
-    top: 5px;
-    font-size: 9px;
-}
-
-.menu-item .new-feed {
-    background: #f9ad59;
-}
-
-.menu-item .new-message {
-    background: #1ab395;
-}
-
-/*以上*/
 
 .g-container .main-area {
     float: left;
