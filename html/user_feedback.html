@@ -1,14 +1,20 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>意见反馈</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KickUs,一个分享技术、生活、哲理的博客网站">
+    <meta name="author" content="Gaby, DepingDu">
+    <meta name="baidu-site-verification" content="9ZlILEfrcj" />
+    <title>意见反馈 - KickUs</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
+    <link href="../css/mainpage.css" rel="stylesheet" />
     <link href="../css/blog_manager.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/css/wangEditor.min.css">
+    <link rel="stylesheet" href="../css/post_edit.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -46,9 +52,7 @@
                 <h3 class="menu-header">操作</h3>
                 <a href="/Users/Feedback" class="menu-item">意见反馈</a>
                 <a href="/Users/SysNews" class="menu-item">
-
-                    未读消息(3)
-
+                    未读消息<span class="glyphicon glyphicon-bell prompt-icon"></span><span class="new-message">8</span>
                 </a>
                 <a href="/Users/Message" class="menu-item">已读消息</a>
                 <a href="/ManageBlogs/Index?type=Jotting" class="menu-item">管理随笔</a>
@@ -62,25 +66,57 @@
                 <a href="/Settings/Index" class="header-item">设置</a>
             </div>
 
-            <div class="main-content">
-                <p>
-                    该页面应该可以用一个编辑器填写意见反馈信息并提交
-                </p>
+            <div class="main-content  g-loc">
+                <div class="edit-part">
+                    <div class="post-title">
+                        <label for="title">标题</label>
+                        <input type="text" id="title" class="input-box">
+                    </div>
+
+                    <div class="edit-area">
+                        <div id="ref-wangEditor">
+
+                        </div>
+                    </div>
+
+                    <div class="post-option">
+                        <input type="submit" id="just-post" value="发布">
+                        <input type="submit" id="save-asdraft" value="存为草稿">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script src="/js/jquery-3.1.1.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../dist/js/wangEditor.js"></script>
 <script>
     $(function () {
+        // 获取元素
+        var div = document.getElementById('ref-wangEditor');
+        // 生成编辑器
+        var editor = new wangEditor(div);
+        editor.create();
+
         $.get("/Home/LoginInfo", function (data) {
             $("#bs-example-navbar-collapse-1").html(data);
         });
     });
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
 </script>
 
 

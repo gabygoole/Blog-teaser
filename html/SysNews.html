@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KickUs,一个分享技术、生活、哲理的博客网站">
+    <meta name="author" content="Gaby, DepingDu">
+    <meta name="baidu-site-verification" content="9ZlILEfrcj" />
+    <title>未读消息 - KickUs</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="../css/blog_manager.css" rel="stylesheet" />
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand brand-icon" href="/">
+                <img src="/icon/caticon.png" />
+            </a>
+            <a class="navbar-brand" href="/">KickUs</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--page_content-->
+
+
+
+
+
+<div class="g-container">
+    <div class="page-content clearfix">
+        <div class="col-gy-4">
+            <nav class="menu">
+                <h3 class="menu-header">操作</h3>
+                <a href="/Users/Feedback" class="menu-item">意见反馈</a>
+                <a href="/Users/SysNews" class="menu-item">未读消息(2)</a>
+                <a href="/Users/Message" class="menu-item">已读消息</a>
+                <a href="/ManageBlogs/Index?type=Jotting" class="menu-item">管理随笔</a>
+            </nav>
+        </div>
+
+        <div class="main-area col-gy-8">
+            <div class="sub-header">
+                <a href="/Users/Feedback" class="selected header-item">意见反馈</a>
+                <a href="/ManageBlogs/Index?type=Jotting" class="header-item">随笔</a>
+                <a href="/Settings/Index" class="header-item">设置</a>
+            </div>
+
+            <div class="main-content">
+                <div class="post-list">
+                    <table>
+                        <tbody>
+                        <tr class="post-header">
+                            <th class="post-title">消息</th>
+                            <th class="short-th">操作</th>
+                            <th class="short-th">操作</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="interval">
+                            <td><a href="#">祝贺网站上线</a></td>
+                            <td><a href="#" data-toggle="modal" data-target="#view-sysnews" type="button" class="status chg">查看</a></td>
+                            <td><span class="msg-state">未读</span></td>
+                            <td><a href="#" class="delete">删除</a></td>
+                        </tr>
+
+                        <tr class="interval">
+                            <td><a href="#">祝贺网站上线</a></td>
+                            <td><a href="#" data-toggle="modal" data-target="#view-sysnews" type="button" class="status chg">查看</a></td>
+                            <td><span class="msg-state">未读</span></td>
+                            <td><a href="#" class="delete">删除</a></td>
+                        </tr>
+
+                        <tr class="interval">
+                            <td><a href="#">祝贺网站上线</a></td>
+                            <td><a href="#" data-toggle="modal" data-target="#view-sysnews" type="button" class="status chg">查看</a></td>
+                            <td><span class="msg-state">未读</span></td>
+                            <td><a href="#" class="delete">删除</a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 查看内容的模态框 -->
+<div class="modal fade" id="view-sysnews" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">管理员</h4>
+            </div>
+            <div class="modal-body">
+                <h4>欢迎来到kickUs!</h4>
+                <p>本网站是一个集众多干货于一体的博客网站，欢迎为本站添加优质内容。
+                <p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $(".chg").click(function () {
+            $(this).parent().next().find(".msg-state").text("已读");
+        })
+    });
+    $(function () {
+        $.get("/Home/LoginInfo", function (data) {
+            $("#bs-example-navbar-collapse-1").html(data);
+        });
+    });
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+</body>
+</html>

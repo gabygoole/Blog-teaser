@@ -1,0 +1,35 @@
+.un-page-content {
+    width: 40%;
+    margin: 10.25em auto 70px;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.logo-part {
+    float: left;
+}
+
+.details-part {
+    float: left;
+    padding-left: 40px;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+li {
+    line-height: 1.7;
+}
+
+li > a {
+    color: #0366d6;
+    font-size: 15px;
+}
+
+h1 {
+    margin-top: 0px;
+    color: #e59345;
+    font-size: 46px;
+}
+

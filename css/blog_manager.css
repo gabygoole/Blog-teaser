@@ -37,6 +37,7 @@
     margin-top: 0px;
     /*这里要改*/
     margin-bottom: 0px;
+    /*以上*/
 }
 
 .menu .menu-item {
@@ -118,10 +119,17 @@
 .post-header th {
     font-weight: 500;
 }
-
-span.status {
+/*这里要改 */
+span.status,
+a.status {
     color: #27ae60;
 }
+
+span.status:focus,
+a.status:focus {
+    outline:none;
+}
+/*以上*/
 
 a.delete {
     color: #e66b6b;    
@@ -151,15 +159,11 @@ tr a:hover{
     width: auto;
     text-align: left;
 }
-
-.post-list .post-status {
+/*这里要改*/
+.post-list .short-th {
     width: 70px;
 }
-
-.post-list .post-view {
-    width: 70px;
-}
-
+/*删除了原来的post-view post-status*/
 
 .gpagination {
     text-align: center;
