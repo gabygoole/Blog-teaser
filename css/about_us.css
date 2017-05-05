@@ -1,6 +1,6 @@
 .home {
     margin-top: 6em;
-    background: url("../icon/timg (1).jpg ") center center fixed;
+    background: url("../icon/bg.jpg ") center center fixed;
     background-size: cover;
     height: 655px;
     text-align: center;
@@ -25,4 +25,153 @@
 .big-para {
     color: whitesmoke;
     font-size: 2em;
+}
+
+.tech-use {
+    background-color: rgba(204, 204, 204, 0.22);
+    text-align: center;
+    height: 700px;
+}
+
+.g-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.g-col-4 {
+    width: 29%;
+    display: inline-block;
+    min-height: 200px;
+    line-height: 3.7;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    color: whitesmoke;
+}
+
+.tech-use > h1 {
+    margin-top: 0px;
+    padding-top: 70px;
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.net {
+    background-color: #66d0b5;
+}
+
+.boot {
+    background-color: #ba75c9;
+}
+
+.mysql {
+    background-color: #d46b62;
+}
+
+.jquery {
+    background-color: #7fd965;
+}
+
+.html {
+    background-color: #a4d76b;
+}
+
+.css {
+    background-color: #73baba;
+}
+
+.author {
+    height: 655px;
+    padding: 0px 100px;
+}
+
+.author > h1 {
+    text-align: center;
+    font-size: 4em;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+.author-item {
+    width: 46%;
+    display: inline-block;
+    min-height: 400px;
+}
+
+.author-item {
+    margin-right: 81px;
+}
+
+.author-item:last-child {
+    margin-right: 0px;
+}
+
+
+.author-item > img {
+    width: 50%;
+    height: 368px;
+    float: left;
+}
+
+.author-details {
+    float: left;
+    width: 37%;
+    margin-left: 40px;
+}
+
+.author-details > h1 {
+    margin-top: 0px;
+    font-size: 46px;
+}
+
+.author-details > p {
+    font-size: 1.5em;
+}
+
+.visited {
+    background-color: #fff;
+    text-align: center;
+    height: 655px;
+    background-image: url("../icon/pattern.png");
+}
+
+.visited h1 {
+    font-size: 2em;
+    color: #ff009b;
+}
+
+.visited li {
+    display: inline-block;
+    background: url("../icon/compteur.png");
+    font-size: 64px;
+    width: 65px;
+    height: 101px;
+    line-height: 101px;
+}
+
+.visited img {
+    margin: 100px auto 60px;
+}
+
+.g-footer {
+    position: relative;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 1.25em;
+    height: 60px;
+    line-height: 60px;
+}
+
+.contact {
+    position: absolute;
+    bottom: 120%;
+    left: 48%;
+}
+
+.contact img {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
 }

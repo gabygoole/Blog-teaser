@@ -145,6 +145,8 @@ article  h1 {
 .article-footer {
     padding-left: 20px;
     padding-bottom: 20px;
+    /*这里要增加*/
+    position: relative;
 }
 
 .glyphicon-upload {
@@ -169,15 +171,40 @@ article  h1 {
     border-radius: 3px;
 }
 
-.collected {
-    margin-right: 3px;
-}
-/*截至*/
+
+
 .article-footer > a {
     color: white;
     padding: 3px;
     background: #4abdac;
 }
+
+/*增加以下几行*/
+.article-footer > a:last-child {
+    padding: 6px 12px;
+    background: white;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    color: #999;
+    position: absolute;
+    top: -8px;
+    right: 3%;
+}
+
+.article-footer > a:last-child:focus,
+.article-footer > a:last-child:hover{
+    text-decoration: none;
+}
+
+.glyphicon-star {
+    margin-left: 5px;
+}
+
+.collect {
+    color: #0767c8;
+}
+/*以上*/
+
 
 .g-pagination {
     background: white;

@@ -12,7 +12,8 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -36,7 +37,8 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">选项 <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">选项 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="login.html">登录</a></li>
                         <li><a href="register.html">注册</a></li>
@@ -56,59 +58,78 @@
 </nav>
 <!--第一块-->
 
-    <div class="home">
-        <div class="bg-overlay">
-            <h1 class="big-header">一个干货满满的技术论坛</h1>
-            <p class="big-para">在这里，你将拓宽自己的技术视野</p>
-        </div>
+<div class="home">
+    <div class="bg-overlay">
+        <h1 class="big-header">一个干货满满的技术论坛</h1>
+        <p class="big-para">在这里，你将拓宽自己的技术视野</p>
     </div>
+</div>
 
-    <!--第二版-->
-    <div>
-        <h1>本站使用的技术</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+<!--第二版-->
+<div class="tech-use">
+    <h1>本站使用的技术</h1>
+    <div class="g-content">
+        <div class="g-col-4 net">.NET</div>
+        <div class="g-col-4 boot">Bootstrap</div>
+        <div class="g-col-4 mysql">MSSQL</div>
+        <div class="g-col-4 jquery">JQuery</div>
+        <div class="g-col-4 html">HTML</div>
+        <div class="g-col-4 css">CSS</div>
     </div>
+</div>
 
-    <!--第三版-->
-    <div>
-        <h1>作者</h1>
+<!--第三版-->
+<div class="author">
+    <h1>作者</h1>
         <div class="author-item">
-            <img src="" alt="DepingDu">
-            <div class="author-details">
-                <h1>DepingDu</h1>
-                <p>那时候我们有梦，关于文学，关于爱情，关于环游世界的旅行; 如今我们深夜饮酒，杯子碰在一起，都是梦破碎的声音</p>
-            </div>
+                <img src="../icon/kit.jpg" alt="DepingDu">
+
+                <div class="author-details">
+                    <h1>DepingDu</h1>
+                    <p>那时候我们有梦，关于文学，关于爱情，关于环游世界的旅行;如今我们深夜饮酒，杯子碰在一起，都是梦破碎的声音</p>
+                </div>
         </div>
+
         <div class="author-item">
-            <img src="" alt="DepingDu">
-            <div class="author-details">
-                <h1>DepingDu</h1>
-                <p>那时候我们有梦，关于文学，关于爱情，关于环游世界的旅行; 如今我们深夜饮酒，杯子碰在一起，都是梦破碎的声音</p>
-            </div>
+                <img src="../icon/kit.jpg" alt="Gaby">
+                <div class="author-details">
+                    <h1>Gaby</h1>
+                    <p>医药法律商业工程这些都是高贵的理想，也是维生的必要条件。但诗、美浪漫、爱这些才是我们生存的原因</p>
+                </div>
         </div>
-    </div>
+
+</div>
+
 
     <!--第四版-->
-    <div>
-        <img src="" alt="咖啡杯">
+    <div class="visited">
+        <img src="../icon/click.ico" alt="咖啡杯">
         <ul>
             <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
-            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
         </ul>
+        <h1>访问量</h1>
+
     </div>
 
     <div class="g-footer">
-
+        © 2017 - 2017, Gaby And DepingDu . All rights reserved
+        <a href="user_feedback.html" class="contact">
+            <img src="../icon/picto_contact.png" alt="">
+        </a>
     </div>
 
+    <script src="../js/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({reset: true});
+        sr.reveal('.g-col-4', {rotate: {y: 200}, distance: '120px', origin: 'right', scale: 0.5, reset: false});
+        sr.reveal('.author-item', {rotate: {y: 50}, distance: '20px', origin: 'top', scale: 0.1, reset: false});
+        sr.reveal('.contact', {rotate: {z: 50}, distance: '20px', origin: 'bottom', scale: 0.1});
+    </script>
+</div>
 </body>
 </html>
