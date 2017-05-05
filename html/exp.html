@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/backend-general.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load and instantiate ScrollReveal first -->
+    <script src="../js/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+
+        // Add class to <html> if ScrollReveal is supported
+        // Note: this method is deprecated, and only works in version 3
+        if (sr.isSupported()) {
+            document.documentElement.classList.add('sr');
+        }
+
+    </script>
+
+    <style>
+
+        /* Ensure elements load hidden before ScrollReveal runs */
+        .sr .fooReveal { visibility: hidden; }
+
+        /* add perspective to your container */
+        .fooContainer { perspective: 800px;
+        }
+
+        .fooReveal {
+            display: inline-block;
+        }
+    </style>
+
 </head>
 <body>
-<a href="#" class="dd"></a>
-<!-- Split button -->
-<div class="btn-group">
-    <button type="button" class="btn btn-success">Action</button>
-    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a href="#" class="no-public">登录</a></li>
-        <li><a href="#" class="no-public">注册</a></li>
-        <li><a href="#" class="no-public">添加博客</a></li>
-        <li><a href="#">系统报错</a></li>
-    </ul>
+
+<div class="fooContainer">
+    <div class="fooReveal" style="background: red;width: 200px;height: 200px;"> Foo </div>
+    <div class="fooReveal" style="background: blue;width: 200px;height: 200px;"> Foo </div>
+    <div class="fooReveal" style="background: yellow;width: 200px;height: 200px;"> Foo </div>
 </div>
 
-<script src="../js/jquery-3.1.1.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<!-- make reveal calls last -->
 <script>
-$(document).ready(function () {$('#view-feedback').on('show.bs.modal', function (event) {});$('#reply-feedback').on('show.bs.modal', function (event) {var $button = $(event.relatedTarget);var $modal = $(this);var name = $button.parent().siblings(".name").text();var title = $button.parent().siblings(".title").text();$modal.find("#user-name").text("@" + name).end().find("#feed-title").text(title);});$(".no-public").click(function () {var choice = $(this).text();$(this).closest(".dropdown-menu").prev().html(choice + '<span class="caret"></span>');})})
+    // use rotation in reveal configuration
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.fooReveal', { container: '.fooContainer', rotate: {y: 200} ,distance: '120px',origin:'right',scale: 0.5});
 </script>
+
 </body>
 </html>
-

@@ -72,6 +72,9 @@
 .user-info {
     padding: 6px;
     margin-bottom: 15px;
+    /*要增加的代码*/
+    display: inline-block;
+    width: 24%;
     /*先不用width:100%*/
 
 }

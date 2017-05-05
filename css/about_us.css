@@ -1,0 +1,28 @@
+.home {
+    margin-top: 6em;
+    background: url("../icon/timg (1).jpg ") center center fixed;
+    background-size: cover;
+    height: 655px;
+    text-align: center;
+}
+
+.bg-overlay {
+    background-color: rgba(0,0,0,0.1);
+    height: 655px;
+}
+
+.big-header,
+.big-para {
+    position: relative;
+    top: 30%;
+}
+
+.big-header {
+    color: whitesmoke;
+    font-size: 5em;
+}
+
+.big-para {
+    color: whitesmoke;
+    font-size: 2em;
+}
