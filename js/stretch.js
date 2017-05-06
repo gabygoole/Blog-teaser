@@ -8,7 +8,9 @@ $(document).ready(function () {
 
 /*这里要增加*/
     $(".collection").click(function () {
-       $(this).find("span").toggleClass("collect");
+       $(".collection").find(".glyphicon").addClass("collect")
+           .end()
+           .find(".sta").text("已收藏");
        return false;
     });
 });

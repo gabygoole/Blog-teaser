@@ -1,36 +1,53 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
 .home {
     margin-top: 6em;
     background: url("../icon/bg.jpg ") center center fixed;
-    background-size: cover;
-    height: 655px;
+    background-size: 100% 355px;
+    height: 355px;
     text-align: center;
 }
 
 .bg-overlay {
     background-color: rgba(0,0,0,0.1);
-    height: 655px;
+    height: 355px;
 }
 
 .big-header,
 .big-para {
     position: relative;
-    top: 30%;
+    top: 35%;
 }
 
 .big-header {
     color: whitesmoke;
-    font-size: 5em;
+    /*font-size: 5em;*/
+    font-size: 3em;
 }
 
 .big-para {
     color: whitesmoke;
-    font-size: 2em;
+    /*font-size: 2em;*/
+    font-size: 1.3em;
 }
 
 .tech-use {
     background-color: rgba(204, 204, 204, 0.22);
     text-align: center;
-    height: 700px;
+    height: 450px;
 }
 
 .g-content {
@@ -38,21 +55,27 @@
     margin: 0 auto;
 }
 
+.g-content1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .g-col-4 {
     width: 29%;
+    min-height: 85px;
+    line-height: 85px;
+    font-size: 1em;
     display: inline-block;
-    min-height: 200px;
-    line-height: 3.7;
-    font-size: 50px;
     margin-bottom: 30px;
-    margin-right: 20px;
+    margin-right: 5px;
     color: whitesmoke;
 }
 
 .tech-use > h1 {
     margin-top: 0px;
     padding-top: 70px;
-    font-size: 4em;
+    /*font-size: 4em;*/
+    font-size: 2.3em;
     margin-bottom: 50px;
 }
 
@@ -81,62 +104,60 @@
 }
 
 .author {
-    height: 655px;
-    padding: 0px 100px;
+    /*height: 995px;*/
+    height: 695px;
+
 }
 
 .author > h1 {
     text-align: center;
-    font-size: 4em;
+    font-size: 2.3em;
     padding-top: 40px;
     margin-bottom: 60px;
 }
 
 .author-item {
-    width: 46%;
-    display: inline-block;
-    min-height: 400px;
+    width: 83%;
+    /*min-height: 400px;*/
+    margin:0 auto 40px;
 }
-
-.author-item {
-    margin-right: 81px;
-}
-
-.author-item:last-child {
-    margin-right: 0px;
-}
-
 
 .author-item > img {
     width: 50%;
-    height: 368px;
+    height: 238px;
     float: left;
 }
 
 .author-details {
     float: left;
-    width: 37%;
-    margin-left: 40px;
+    width: 43%;
+    /*margin-left: 40px;*/
+    margin-left: 15px;
 }
 
 .author-details > h1 {
     margin-top: 0px;
-    font-size: 46px;
+    /*font-size: 46px;*/
+    font-size: 2em;
 }
 
 .author-details > p {
-    font-size: 1.5em;
+    /*font-size: 1.7em;*/
+    font-size: 1em;
+    margin-left: 10px;
 }
 
 .visited {
     background-color: #fff;
     text-align: center;
-    height: 655px;
+    /*height: 655px;*/
+    height: 575px;
     background-image: url("../icon/pattern.png");
 }
 
 .visited h1 {
-    font-size: 2em;
+    /*font-size: 2em;*/
+    font-size: 1em;
     color: #ff009b;
 }
 
@@ -150,7 +171,7 @@
 }
 
 .visited img {
-    margin: 100px auto 60px;
+    margin: 30px auto 60px;
 }
 
 .g-footer {
@@ -158,15 +179,15 @@
     background-color: #000;
     color: white;
     text-align: center;
-    font-size: 1.25em;
-    height: 60px;
-    line-height: 60px;
+    font-size: .7em;
+    height: 50px;
+    line-height: 50px;
 }
 
 .contact {
     position: absolute;
     bottom: 120%;
-    left: 48%;
+    right: 4%;
 }
 
 .contact img {
@@ -174,4 +195,65 @@
     border-radius: 100%;
     width: 60px;
     height: 60px;
+}
+
+
+@media only screen and (min-width: 568px) {
+	.home{
+		background-size: cover;
+	}
+
+	}
+    .g-col-4 {
+        width: 29%;
+        min-height: 200px;
+        line-height: 3.7;
+        font-size: 50px;
+    }
+
+    .tech-use {
+        height: 675px;
+    }
+
+    .author {
+        height: 600px;
+        padding: 0px 100px;
+    }
+
+    .author-item {
+        width: 46%;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .author-item:last-child {
+        margin-right: 0px;
+        float: right;
+    }
+
+    .author-details > p {
+        font-size: 1.5em;
+    }
+
+    .author-item > img {
+        height: 368px;
+    }
+
+    .visited img {
+        margin: 60px auto 60px;
+    }
+
+    .visited h1{
+        font-size: 2em;
+    }
+
+    .author-details {
+        width: 37%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .author > h1 {
+        font-size: 4em;
+    }
 }

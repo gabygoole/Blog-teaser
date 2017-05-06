@@ -180,7 +180,7 @@ article  h1 {
 }
 
 /*增加以下几行*/
-.article-footer > a:last-child {
+.article-footer .collection {
     padding: 6px 12px;
     background: white;
     border: 1px solid #eeeeee;
@@ -367,6 +367,3 @@ article  h1 {
     width: 45%;
 }
 
-.g-pre:hover {
-
-}

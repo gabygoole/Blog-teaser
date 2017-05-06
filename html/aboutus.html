@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/mainpage.css">
     <link rel="stylesheet" href="../css/about_us.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -68,7 +69,7 @@
 <!--第二版-->
 <div class="tech-use">
     <h1>本站使用的技术</h1>
-    <div class="g-content">
+    <div class="g-content1">
         <div class="g-col-4 net">.NET</div>
         <div class="g-col-4 boot">Bootstrap</div>
         <div class="g-col-4 mysql">MSSQL</div>
@@ -81,7 +82,7 @@
 <!--第三版-->
 <div class="author">
     <h1>作者</h1>
-        <div class="author-item">
+        <div class="author-item clearfix">
                 <img src="../icon/kit.jpg" alt="DepingDu">
 
                 <div class="author-details">
@@ -90,7 +91,7 @@
                 </div>
         </div>
 
-        <div class="author-item">
+        <div class="author-item clearfix">
                 <img src="../icon/kit.jpg" alt="Gaby">
                 <div class="author-details">
                     <h1>Gaby</h1>
@@ -109,8 +110,6 @@
             <li>2</li>
             <li>3</li>
             <li>4</li>
-            <li>5</li>
-            <li>6</li>
         </ul>
         <h1>访问量</h1>
 
@@ -122,13 +121,16 @@
             <img src="../icon/picto_contact.png" alt="">
         </a>
     </div>
-
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/scrollreveal.min.js"></script>
     <script>
-        window.sr = ScrollReveal({reset: true});
-        sr.reveal('.g-col-4', {rotate: {y: 200}, distance: '120px', origin: 'right', scale: 0.5, reset: false});
-        sr.reveal('.author-item', {rotate: {y: 50}, distance: '20px', origin: 'top', scale: 0.1, reset: false});
-        sr.reveal('.contact', {rotate: {z: 50}, distance: '20px', origin: 'bottom', scale: 0.1});
+//        将以下代码替换原对应部分
+//        window.sr = ScrollReveal({reset: true});
+//        sr.reveal('.g-col-4', {rotate: {y: 200}, distance: '120px', origin: 'left', scale: 0.5, reset: false});
+//        sr.reveal('.author-item', {rotate: {y: 50}, distance: '20px', origin: 'left', scale: 0.1, reset: false});
+//        sr.reveal('.contact', {rotate: {z: 50}, distance: '20px', origin: 'bottom', scale: 0.1});
+//        以上
     </script>
 </div>
 </body>
