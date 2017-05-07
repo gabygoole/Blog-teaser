@@ -182,7 +182,7 @@ a:hover {
     line-height: 26px;
 }
 
-@media only screen and (min-width: 25.875em) { /*414px*/
+@media only screen and (min-width: 29.57em) { /*414px*/
     .footer {
         padding-left: 7em;
     }
