@@ -2,7 +2,20 @@
 一个博客流式网站，类似博客园、CSDN
 
 ## 功能例图
-![img](https://github.com/gabygoole/Blog-teaser/blob/master/diagram/function.png)
+![img](https://github.com/gabygoole/Blog-teaser/blob/master/diagram/function.jpg)
+
+## 项目演示
+### PC端展示(14寸)
+![img](https://github.com/gabygoole/Blog-teaser/blob/master/diagram/kickUsPC.gif)
+### 移动端展示(iPhone6) 
+![img](https://github.com/gabygoole/Blog-teaser/blob/master/diagram/kickUsMobile.gif)
+
+### 适配设备
+除部分页面(如：用户后台管理界面)不让其自适应以外。其余页面均已自适应如下设备：
+- iPhone4/5/6(s)/6(s) Plus 
+- Nexus 5X/6P
+- iPad (Pro)
+注：页面在17.3寸PC上显示不够美观
 
 ## 参与构建
 
@@ -53,4 +66,3 @@
 
 ## 作者
 - **Gaby** - 前端
-- **DepingDu - 后端 
